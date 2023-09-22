@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: #080808;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+   /*background-color: rgb(184, 113, 250); use for navbar color*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 15vh;
+    margin: auto;
+
+}
+.navbar .navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.navbar .logo{
+    font-size: 4rem;
+    font-family: 'Niconne', cursive;
+    color: wheat;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: .08rem;
+
+}
+.btns button{
+    font-size: 1.2rem;
+    border: none;
+    padding: .3rem 1.2rem;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+.btns button:nth-child(1){
+    background-color: transparent;
+    color: whitesmoke;
+}
+.btns button:nth-child(2){
+    background-color: white;
+    border: .1rem  solid white;
+    margin-left: 1.2rem;
+}
+.btns button:nth-child(2):hover{
+    background-color: black;
+    color: white;
+}
+.btns button:nth-child(1):hover{
+    background-color: black;
+    color: white;
+}
+.navlist li:hover{
+    background-color: red;
+    color: white;
+}
+.hero{
+    height: calc(100vh - 15vh);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: start;
+}
+.hero .content{
+    text-align: center;
+    max-width: 50%;
+}
+.content h1{
+    color:white;
+    font-size: 4rem;
+    line-height: 6rem;
+    letter-spacing: .1rem;
+    margin-top: .1rem;
+    font-family: 'VT323', monospace;
+}
+.content p{
+    color:white;
+    font-size: 3rem;
+    margin: .9rem 0;
+    font-family: 'VT323', monospace;
+    line-height: 2rem;
+}
+.img-box img{
+    height: 55rem;
+}
